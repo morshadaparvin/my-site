@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(net.png);
+    background-position: center;
+    background-size: cover;
+    padding: 8px 6px;
+    position: relative;
+    border-bottom: 8px solid rgba(128, 128, 128, 0.16);
+}
+.text{
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.481);
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .header-text {
+    margin-bottom: 40px;
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn1{
+    border: 0;
+    outline: 0;
+    background: rgba(255, 0, 0, 0.481);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 7px 17px;
+    background: transparent;
+    border: 1px solid;
+  }
+  .btn2{
+    border: 0;
+    outline: 0;
+    background: rgba(255, 0, 0, 0.481);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 7px 15px;
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+.header-text{
+  text-align: center;
+  margin-top: 90px;
+}
+.header-text h1{
+  margin-bottom: 20px;
+}
+.header-text p{
+  margin-bottom: 20px;
+}
+.header-text p{
+  margin-bottom: 20px;
+}
+.header-text input{
+  padding: 20px 60px;
+}
+.header-text button{
+  padding: 20px 40px;
+  background: rgba(255, 0, 0, 0.481);
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  font-weight: 200;
+
+}
+.features{
+  padding: 50px 12%;
+  font-size: 18px;
+}
+.row{
+  display: flex;
+  will-change: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+.text-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+.features h2{
+  font-size: 20px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+.freq{
+  text-align: center;
+  padding: 20px 16%;
+}
+.accordion{
+  margin: 10px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgba(128, 128, 128, 0.585);
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after{
+  content: '+';
+  font-size: 36px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordion .content{
+  background-color: rgba(128, 128, 128, 0.592);
+  padding: 0 20px;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+
+}
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 10px 30px;
+  margin-bottom: 4px;
+}
+.accordion input[type="radio"]:checked + label::{
+transform: rotate(135deg);
+}
+.footer{
+  margin-bottom: 20px;
+  display: flex;
+  padding: 50px 12% 10px;
+  justify-content: space-between;
+}
+.footer a{
+  display: block;
+  color:rgba(255, 255, 255, 0.593);
+  padding-bottom: 20px;
+}
+ h2{
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 60px;
+  color:rgba(255, 255, 255, 0.557);
+  text-decoration-line: underline;
+  border-top: 8px solid rgba(128, 128, 128, 0.16);
+  margin-top: 60px;
+}
+#btn-last{
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+.copyright{
+  margin-left: 90px;
+  margin-bottom: 40px;
+  font-size: 10px;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px){
+  .text{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.btn1{
+  padding: 5px 10px;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+.btn2{
+  padding: 5px 8px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+.header-text h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 8px;
+
+}
+.header-text{
+  margin-top: 30px;
+}
+.header-text p{
+  padding: 4px 4px;
+
+}
+.header-text input{
+  font-size: 12px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+.header-text button{
+  padding: 10px 6px;
+}
+.text-col, .img-col{
+  flex-basis: 100%;
+}
+.features h1{
+  font-size: 25px;
+}
+.features p{
+  font-size: 12px;
+}
+.row:nth-child(2), row:nth-child(4){
+  flex-direction: column-reverse;
+}
+.freq h1{
+  font-size: 20px;
+  font-weight: 400px;
+  padding: 10px 10px;
+}
+.accordion .content{
+  font-size: 20px;
+}
+.accordion li label{
+  padding: 10px;
+  font-size: 12px;
+}
+label::after{
+  font-size: 22px;
+}
+.footer a{
+  padding: 0px 0px 15px 0px;
+}
+
+}
